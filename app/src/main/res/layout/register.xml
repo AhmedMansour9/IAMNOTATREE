@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fff"
     android:layout_height="match_parent">
 
@@ -21,12 +22,14 @@
         android:layout_width="match_parent"
         android:layout_below="@+id/Create"
         android:id="@+id/create"
+        app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
         android:layout_marginRight="@dimen/_50sdp"
         android:layout_marginLeft="@dimen/_50sdp"
+        android:theme="@style/TextAppearence.App.TextInputLayout"
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_height="wrap_content"
         >
-        <EditText android:id="@+id/Name"
+        <EditText android:id="@+id/User_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
@@ -34,14 +37,16 @@
             android:gravity="right"
             android:textColorHint="#000"
             android:textSize="14sp"
-            android:textColor="@android:color/black"
-
+            android:textColor="#173d50"
+            android:textStyle="bold"
             android:hint="أسم كامل " />
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
             >
-            <EditText android:id="@+id/descrip"
+            <EditText android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
@@ -49,34 +54,39 @@
                 android:gravity="right"
                 android:textColorHint="#000"
                 android:textSize="14sp"
+                android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:hint="الايميل" />
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
                 >
-                <EditText android:id="@+id/price"
+                <EditText android:id="@+id/Phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLines="10"
                     android:gravity="right"
                     android:textColorHint="#000"
+                    android:textStyle="bold"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:hint="رقم الموبايل" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
                     android:layout_height="wrap_content">
 
                     <EditText
-                        android:id="@+id/phone"
+                        android:id="@+id/Password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="right"
                         android:hint="الباسورد"
                         android:inputType="phone"
+                        android:textStyle="bold"
                         android:maxLines="10"
                         android:textColor="@android:color/black"
                         android:textColorHint="#fff"
